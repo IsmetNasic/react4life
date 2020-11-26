@@ -1,8 +1,9 @@
 import React, { useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
-import { MdFitnessCenter } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -13,42 +14,44 @@ function Navbar() {
 
   return (
     <>
+      <IconContext.Provider value={{ color: '#c23838' }}>
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-              <MdFitnessCenter className='navbar-icon' />
-              FIT4LIFE
+              <img src="/images/fit4life.png" alt="logo" />
+              FIT<h1>4</h1>LIFE
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                <NavLink exact to='/' className='nav-links' onClick={closeMobileMenu}>
                   HOME
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link
+                <NavLink exact
                   to='/services'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
                   SERVICES
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link
+                <NavLink exact
                   to='/about'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
                   ABOUT
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
         </nav>
+      </IconContext.Provider>  
     </>
   );
 }

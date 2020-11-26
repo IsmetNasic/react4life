@@ -2,15 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
-  position: sticky;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  font-weight: 900;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  position: fixed;
+  padding-top: 80px;
 }
 
 .container {
@@ -19,21 +20,25 @@
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
 }
 
 .navbar-logo {
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-family: "Kaushan Script", cursive;
   display: flex;
   align-items: center;
+  color: #a38d65;
 }
 
-.navbar-icon {
-  margin-right: 0.5rem;
+.navbar-logo h1 {
+  color: #c23838;
+  font-size: 2rem;
+}
+
+.navbar-logo img {
+  height: 80px;
 }
 
 .nav-menu {
@@ -51,7 +56,9 @@
 }
 
 .nav-item:hover {
-  border-bottom: 2px solid #f00946;
+  border-bottom: 2px solid #c23838;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 .nav-links {
@@ -60,6 +67,7 @@
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   height: 100%;
+  color: #a38d65;
 }
 
 .menu-icon {
@@ -67,11 +75,13 @@
   z-index: 2;
 }
 
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
+.active {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #c23838;
+}
 
+@media screen and (max-width: 960px) {
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -79,56 +89,31 @@
     height: 100vh;
     position: absolute;
     left: -100%;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     padding-top: 3rem;
   }
-
   .nav-menu.active {
-    background: #1c2237;
+    background: #110b0b;
     left: 0;
     opacity: 1;
     transition: all 0.6s ease;
-    z-index: 1;
   }
-
   .nav-links {
-    text-align: center;
     padding: 2rem;
-    width: 100%;
-    display: table;
   }
-
-  .nav-links:hover {
-    color: #950028;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
-  }
-
   .nav-item:hover {
     border: none;
   }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
-
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 80px;
+    right: 5%;
     transform: translate(-100%, 60%);
     font-size: 1.7rem;
     cursor: pointer;
   }
   .navbar-logo {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }

@@ -1,0 +1,94 @@
+/* $black-mobile-menu: #110b0b;
+$white-text: #f1f1f1;
+dirty-white: #e2e2e2ad;
+$transparent-black: rgba(53, 49, 49, 0.3);
+$transparent-white: rgba(255, 255, 255, 0.1);
+$helmet-red: #c23838;
+$helmet-gold: #a38d65;
+$bg-color: #292928; 
+*/
+
+.Container {
+  height: 100vh;
+}
+
+.Video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Add some content at the bottom of the video/page */
+.Content {
+  position: absolute;
+  top: 0;
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.SubContent {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  background: rgba(53, 49, 49, 0.3);
+}
+.SubContent p {
+  color: #e2e2e2ad;
+  font-size: 1.3rem;
+}
+.SubContent button {
+  font-weight: bold;
+  margin-top: 30px;
+  color: #f1f1f1;
+  border: #f1f1f1 2px solid;
+  padding: 10px 5px;
+  background-color: hsla(0, 0%, 0%, 0);
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+.SubContent button:hover {
+  background-color: #f1f1f1;
+  color: #000000c0;
+}
+
+.SubContent img {
+  width: 175px;
+  height: 175px;
+  display: block;
+  margin: 15px auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .SubContent img {
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .SubContent img {
+    display: none;
+  }
+  .SubContent h1 {
+    font-size: 1.5rem;
+  }
+  .SubContent p {
+    font-size: 1rem;
+  }
+  .SubContent button {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f1f1f1;
+    border: #f1f1f1 2px solid;
+    padding: 5px 5px;
+    background-color: hsla(0, 0%, 0%, 0);
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+}

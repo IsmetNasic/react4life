@@ -1,11 +1,15 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
-import { heroObjOne } from './Data';
+import PicSection from '../../PicSection';
+import { heroObjOne, picDeadlift } from './Data';
+import BackgroundVideo from '../../BackgroundVideo';
 
 function Home() {
   return (
     <> 
-     <HeroSection {...heroObjOne} />
+      < BackgroundVideo />
+     {/* <HeroSection {...heroObjOne} /> */}
+      <PicSection {...picDeadlift} />
     </>
   );
 }
