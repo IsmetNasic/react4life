@@ -1,6 +1,6 @@
 /* $black-mobile-menu: #110b0b;
 $white-text: #f1f1f1;
-dirty-white: #e2e2e2ad;
+dirty-white: #f6f1f1d3;
 $transparent-black: rgba(53, 49, 49, 0.3);
 $transparent-white: rgba(255, 255, 255, 0.1);
 $helmet-red: #c23838;
@@ -23,6 +23,7 @@ $bg-color: #292928;
   position: absolute;
   top: 0;
   color: #f1f1f1;
+  text-shadow: 2px 2px 5px black;
   width: 100%;
   height: 100%;
   display: flex;
@@ -37,10 +38,10 @@ $bg-color: #292928;
   background: rgba(53, 49, 49, 0.3);
 }
 .SubContent p {
-  color: #e2e2e2ad;
+  color: #f6f1f1d3;
   font-size: 1.3rem;
 }
-.SubContent button {
+button {
   font-weight: bold;
   margin-top: 30px;
   color: #f1f1f1;
@@ -49,8 +50,9 @@ $bg-color: #292928;
   background-color: hsla(0, 0%, 0%, 0);
   font-size: 1.25rem;
   border-radius: 5px;
+  min-width: 100px;
 }
-.SubContent button:hover {
+button:hover {
   background-color: #f1f1f1;
   color: #000000c0;
 }

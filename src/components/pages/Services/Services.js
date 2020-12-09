@@ -1,12 +1,15 @@
 import React from 'react';
-import HeroSection from '../../HeroSection';
-import { heroObjOne, picDeadlift } from './Data';
-import BackgroundVideo from '../../BackgroundVideo';
+import OnePicCard from '../../OnePicCard';
+import TwoPicCard from '../../TwoPicCard';
+import { aboutServices, programOne, programTwo } from './Data';
+
 
 function Services() {
   return (
     <> 
-    <h1>Services</h1>
+    <OnePicCard {...aboutServices} />
+    <TwoPicCard {...programOne} />
+    <TwoPicCard {...programTwo} />
     </>
   );
 }

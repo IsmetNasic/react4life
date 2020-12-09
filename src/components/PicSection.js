@@ -8,10 +8,10 @@ function PicSection({
   }) {
     return (
       <>
-         <div className='pic-container'>
+         <div className='home-pic-container'>
             <img src={picImg} /> 
-            <div className='hero-container'>
-                <h1 className='big-text'>{bigText}</h1>
+            <div className='home-text-container'>
+                <h1 className='home-big-text'>{bigText}</h1>
                 <Link to='/about'>
                   <button type="button" className="btn btn-outline-dark">MORE ABOUT US</button>
                 </Link>

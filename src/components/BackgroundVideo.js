@@ -17,7 +17,7 @@ const BackgroundVideo = () => {
                     <h1>BUILD YOUR BODY</h1>
                     <p>Take care of your body. It's the only place you have to live.</p>
                     <Link to='/services'>
-                    <button type="button" className="btn btn-outline-dark">START TODAY</button>
+                    <button type="button">START NOW</button>
                     </Link>
                 </div>
             </div>

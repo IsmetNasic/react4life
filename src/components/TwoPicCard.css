@@ -1,0 +1,142 @@
+.about-two-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.coach-one {
+  position: absolute;
+  top: 80px;
+  left: 5%;
+  width: 45%;
+  height: 80%;
+  border: solid#f1f1f1 1px;
+}
+.coach-one img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.coach-one h1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  color: #c23838;
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.5rem;
+}
+.coach-one p {
+  text-align: center;
+  position: absolute;
+  text-align: justify;
+  top: 60%;
+  left: 5%;
+  right: 5%;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.1rem;
+}
+
+.coach-two {
+  position: absolute;
+  top: 80px;
+  right: 5%;
+  width: 45%;
+  height: 80%;
+  border: solid #f1f1f1 1px;
+}
+
+.coach-two img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.coach-two h1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  color: #c23838;
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.5rem;
+}
+.coach-two p {
+  position: absolute;
+  text-align: justify;
+  top: 60%;
+  left: 5%;
+  right: 5%;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-two-container {
+    display: block;
+    position: relative;
+    height: 150vh;
+  }
+  .coach-one {
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    border: solid #f1f1f1 1px;
+  }
+  .coach-two {
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    border: solid #f1f1f1 1px;
+  }
+  .coach-two h1 {
+    font-size: 1.3rem;
+  }
+  .coach-two p {
+    font-size: 1rem;
+  }
+  .coach-one h1 {
+    font-size: 1.3rem;
+  }
+  .coach-one p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .about-two-container {
+    display: block;
+    position: relative;
+    height: 175vh;
+  }
+  .coach-one {
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+  }
+  .coach-two {
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+  }
+}
