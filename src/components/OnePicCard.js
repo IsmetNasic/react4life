@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './OnePicCard.css';
 
 function OnePicCard({
@@ -6,6 +6,7 @@ function OnePicCard({
     bigText,
     smallText,
   }) {
+    
     return (
       <>
         <div className='about-one-container'>

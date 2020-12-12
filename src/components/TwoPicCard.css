@@ -123,20 +123,20 @@
   .about-two-container {
     display: block;
     position: relative;
-    height: 175vh;
+    height: 220vh;
   }
   .coach-one {
     position: relative;
     top: 0;
-    left: 5%;
-    width: 90%;
+    left: 2%;
+    width: 96%;
     height: 50%;
   }
   .coach-two {
     position: relative;
     top: 0;
-    left: 5%;
-    width: 90%;
+    left: 2%;
+    width: 96%;
     height: 50%;
   }
 }

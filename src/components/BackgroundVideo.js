@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './BackgroundVideo.module.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const BackgroundVideo = () => {
     const videoSource = "/videos/video.mp4"
+
+    useEffect(() =>{
+        Aos.init({ duration: 50});
+      }, []);
     return (
-        <div className={classes.Container} >
+        <div data-aos='zoom-out-up' className={classes.Container} >
             <video autoPlay="autoplay" loop="loop" muted className={classes.Video} >
                 <source src={videoSource} type="video/mp4" />
                 Your browser does not support the video tag.
